@@ -1,0 +1,155 @@
+/* Bluebird Portraits Contact Page - Theme from arising-images-theme */
+
+:root {
+  --primary: #185d6f;
+  --primary-dark: #0e4b5d;
+  --accent: #ee7f60;
+  --background: #E7DCD6;
+  --body-text: #656869;
+  --dark-text: #16181B;
+  --white: #fff;
+  --container-max: 1132px;
+  --font-heading: "Spectral", serif;
+  --font-body: "Lexend", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--body-text);
+  line-height: 1.5;
+}
+
+.bluebird-theme h1,
+.bluebird-theme h2,
+.bluebird-theme h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 0.5em;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.header {
+  background: var(--white);
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header__brand {
+  display: inline-block;
+}
+
+.header__logo {
+  display: block;
+  height: 48px;
+  width: auto;
+}
+
+/* Banner */
+.banner {
+  background: var(--background);
+}
+
+.banner__inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.banner__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Main content */
+.main {
+  padding: 60px 0 80px;
+}
+
+.contact-section {
+  margin-bottom: 48px;
+}
+
+.contact-section:last-child {
+  margin-bottom: 0;
+}
+
+.contact-section__title {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 0 0 8px;
+}
+
+.contact-section__desc {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--body-text);
+  margin: 0 0 12px;
+}
+
+.contact-section__phone {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-section__phone:hover {
+  color: var(--primary-dark);
+}
+
+/* Footer */
+.footer {
+  background: var(--background);
+  padding: 24px 0;
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 14px;
+  color: var(--primary);
+}
+
+/* Responsive - breakpoint ~820px from theme */
+@media screen and (max-width: 820px) {
+  .header__logo {
+    height: 40px;
+  }
+
+  .banner__image {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .main {
+    padding: 40px 0 60px;
+  }
+
+  .contact-section__title {
+    font-size: 24px;
+  }
+
+  .contact-section__phone {
+    font-size: 18px;
+  }
+}
