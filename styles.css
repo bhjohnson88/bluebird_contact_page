@@ -118,6 +118,44 @@ body {
   color: var(--primary-dark);
 }
 
+/* Legal accordion */
+.legal-section {
+  padding: 40px 0 20px;
+  border-top: 1px solid #ddd;
+}
+
+.legal-section__title {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  margin: 0 0 16px;
+  color: var(--primary);
+}
+
+.accordion__item {
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  padding: 8px 12px;
+}
+
+.accordion__summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--primary);
+  list-style: none;
+}
+
+.accordion__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion__content {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--body-text);
+}
+
 /* Footer */
 .footer {
   background: var(--background);
